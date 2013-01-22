@@ -4,6 +4,7 @@ namespace FOQ\ElasticaBundle\Transformer;
 
 use Symfony\Component\Form\Util\PropertyPath;
 
+use Elastica\Document as Elastica_Document;
 /**
  * Maps Elastica documents with Doctrine objects
  * This mapper assumes an exact match between
@@ -42,7 +43,7 @@ class ModelToElasticaAutoTransformer implements ModelToElasticaTransformerInterf
     {
         $identifierProperty = new PropertyPath($this->options['identifier']);
         $identifier         = $identifierProperty->getValue($object);
-        $document           = new \Elastica_Document($identifier);
+        $document           = new Elastica_Document($identifier);
         foreach ($fields as $key => $mapping) {
             $property = new PropertyPath($key);
             if (!empty($mapping['_parent']) && $mapping['_parent'] !== '~') {
