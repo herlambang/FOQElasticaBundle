@@ -8,8 +8,8 @@ use FOQ\ElasticaBundle\Transformer\ElasticaToModelTransformerInterface;
 use FOQ\ElasticaBundle\Paginator\TransformedPaginatorAdapter;
 use FOQ\ElasticaBundle\Paginator\FantaPaginatorAdapter;
 use Pagerfanta\Pagerfanta;
-use Elastica_Searchable;
-use Elastica_Query;
+use Elastica\Searchable as Elastica_Searchable;
+use Elastica\Query as Elastica_Query;
 
 /**
  * Finds elastica documents and map them to persisted objects

@@ -2,7 +2,7 @@
 
 namespace FOQ\ElasticaBundle;
 
-use Elastica_Client;
+use Elastica\Client as Elastica_Client;
 use FOQ\ElasticaBundle\Logger\ElasticaLogger;
 
 /**

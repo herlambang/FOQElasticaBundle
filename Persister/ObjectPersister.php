@@ -5,8 +5,8 @@ namespace FOQ\ElasticaBundle\Persister;
 use FOQ\ElasticaBundle\Provider\ProviderInterface;
 use FOQ\ElasticaBundle\Transformer\ModelToElasticaTransformerInterface;
 use Symfony\Component\HttpKernel\Log\LoggerInterface;
-use Elastica_Type;
-use Elastica_Document;
+use Elastica\Type as Elastica_Type;
+use Elastica\Document as Elastica_Document;
 use Exception;
 
 /**

@@ -5,7 +5,7 @@ namespace FOQ\ElasticaBundle\Doctrine;
 use FOQ\ElasticaBundle\HybridResult;
 use FOQ\ElasticaBundle\Transformer\ElasticaToModelTransformerInterface;
 use FOQ\ElasticaBundle\Transformer\HighlightableModelInterface;
-use Elastica_Document;
+use Elastica\Document as Elastica_Document;
 use Symfony\Component\Form\Util\PropertyPath;
 
 /**

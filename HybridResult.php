@@ -2,7 +2,7 @@
 
 namespace FOQ\ElasticaBundle;
 
-use Elastica_Result;
+use Elastica\Result as Elastica_Result;
 
 class HybridResult
 {

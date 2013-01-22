@@ -4,7 +4,7 @@ namespace FOQ\ElasticaBundle\Paginator;
 
 use FOQ\ElasticaBundle\Transformer\ElasticaToModelTransformerInterface;
 use FOQ\ElasticaBundle\Paginator\RawPartialResults;
-use Elastica_ResultSet;
+use Elastica\ResultSet as Elastica_ResultSet;
 
 /**
  * Partial transformed result set

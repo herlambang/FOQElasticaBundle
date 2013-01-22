@@ -3,7 +3,7 @@
 namespace FOQ\ElasticaBundle\Doctrine\MongoDB;
 
 use FOQ\ElasticaBundle\Doctrine\AbstractElasticaToModelTransformer;
-use Elastica_Document;
+use Elastica\Document as Elastica_Document;
 
 /**
  * Maps Elastica documents with Doctrine objects

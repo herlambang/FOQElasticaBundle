@@ -2,6 +2,7 @@
 
 namespace FOQ\ElasticaBundle;
 
+use Elastica\Type\Mapping as Elastica_Type_Mapping;
 /**
  * Deletes and recreates indexes
  */
@@ -70,7 +71,7 @@ class Resetter
      */
     protected function createMapping($indexConfig)
     {
-		$mapping = \Elastica_Type_Mapping::create($indexConfig['properties']);
+		$mapping = Elastica_Type_Mapping::create($indexConfig['properties']);
 
         foreach($indexConfig['properties'] as $field => $type) {
             if (!empty($type['_parent']) && $type['_parent'] !== '~') {

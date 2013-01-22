@@ -8,8 +8,8 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Output\Output;
-use Elastica_Query;
-use Elastica_Result;
+use Elastica\Query as Elastica_Query;
+use Elastica\Result as Elastica_Result;
 
 /**
  * Searches a type

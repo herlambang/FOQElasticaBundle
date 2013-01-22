@@ -4,7 +4,7 @@ namespace FOQ\ElasticaBundle\Finder;
 
 use FOQ\ElasticaBundle\Paginator\PaginatorAdapterInterface;
 use Pagerfanta\Pagerfanta;
-use Elastica_Query;
+use Elastica\Query as Elastica_Query;
 
 interface PaginatedFinderInterface extends FinderInterface
 {

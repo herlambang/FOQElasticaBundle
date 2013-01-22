@@ -3,7 +3,7 @@
 namespace FOQ\ElasticaBundle\Paginator;
 
 use FOQ\ElasticaBundle\Paginator\PartialResultsInterface;
-use Elastica_ResultSet;
+use Elastica\ResultSet as Elastica_ResultSet;
 
 /**
  * Raw partial results transforms to a simple array

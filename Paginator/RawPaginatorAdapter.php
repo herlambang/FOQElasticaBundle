@@ -2,8 +2,8 @@
 
 namespace FOQ\ElasticaBundle\Paginator;
 
-use Elastica_Searchable;
-use Elastica_Query;
+use Elastica\Searchable as Elastica_Searchable;
+use Elastica\Query as Elastica_Query;
 use FOQ\ElasticaBundle\Paginator\PaginatorAdapterInterface;
 use FOQ\ElasticaBundle\Paginator\RawPartialResults;
 

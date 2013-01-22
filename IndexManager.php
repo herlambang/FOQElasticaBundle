@@ -2,6 +2,8 @@
 
 namespace FOQ\ElasticaBundle;
 
+use Elastica\Index as Elastica_Index;
+
 class IndexManager
 {
     protected $indexesByName;
@@ -13,7 +15,7 @@ class IndexManager
      * @param array  $indexesByName
      * @param string $defaultIndexName
      */
-    public function __construct(array $indexesByName, \Elastica_Index $defaultIndex)
+    public function __construct(array $indexesByName, Elastica_Index $defaultIndex)
     {
         $this->indexesByName = $indexesByName;
         $this->defaultIndexName = $defaultIndex->getName();

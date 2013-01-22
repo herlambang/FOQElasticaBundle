@@ -4,8 +4,8 @@ namespace FOQ\ElasticaBundle\Paginator;
 
 use FOQ\ElasticaBundle\Transformer\ElasticaToModelTransformerInterface;
 use FOQ\ElasticaBundle\Paginator\TransformedPartialResults;
-use Elastica_Searchable;
-use Elastica_Query;
+use Elastica\Searchable as Elastica_Searchable;
+use Elastica\Query as Elastica_Query;
 
 /**
  * Allows pagination of Elastica_Query
